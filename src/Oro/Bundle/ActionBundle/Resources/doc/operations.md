@@ -55,7 +55,7 @@ operations:
             icon: fa-clock-o                                         # (optional) class of button icon
             class: btn                                              # (optional) class of button
             group: aсme.demo.operation.demogroup.label              # (optional) group operation to drop-down on the label
-            template: customTemplate.html.twig                      # (optional) custom button template
+            template: 'customTemplate.html.twig'                      # (optional) custom button template
             page_component_module:                                  # (optional) js-component module
                 acme/js/app/components/demo-component
             page_component_options:                                 # (optional) js-component module options
@@ -64,7 +64,7 @@ operations:
                 attributeName: attributeValue
 
         frontend_options:                                           # (optional) display options for operation button
-            template: customDialogTemplate.html.twig                # (optional) custom template, can be used both for page or dialog
+            template: '@AcmeBundle/Resources/views/customDialogTemplate.html.twig'                # (optional) custom template, can be used both for page or dialog
             title: aсme.demo.operations.dialog.title                # (optional) custom title
             title_parameters:
                 %%some_param%%: $.paramValue
